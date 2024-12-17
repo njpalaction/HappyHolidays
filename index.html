@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoplay Video</title>
+    <title>Autoplay Vimeo Video</title>
     <style>
-        /* CSS to ensure the iframe maintains a responsive aspect ratio */
+        /* Ensure the video covers the entire screen */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
             overflow: hidden;
+        }
+        .video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
         }
         iframe {
             position: absolute;
@@ -24,6 +31,14 @@
     </style>
 </head>
 <body>
-    <iframe src="https://drive.google.com/file/d/1bDhRjipuUlzhImNc7rqlzGfXB3-G8lgA/preview?autoplay=1&mute=1" allow="autoplay"></iframe>
+    <!-- Embed Vimeo video with autoplay enabled -->
+    <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/1040199570?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                title="Untitled video - Made with Clipchamp"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
