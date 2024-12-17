@@ -12,6 +12,7 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
+            position: relative;
         }
 
         /* Video container for maintaining aspect ratio and making it responsive */
@@ -31,6 +32,21 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        /* Text overlay style */
+        .overlay-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
         }
 
         /* Make the video fullscreen for smaller screens */
@@ -55,6 +71,11 @@
     </style>
 </head>
 <body>
+    <!-- Text overlay at the top -->
+    <div class="overlay-text">
+        ISRAEL'S GENOCIDE IN GAZA
+    </div>
+
     <!-- Embed Vimeo video with autoplay enabled and muted -->
     <div class="video-container">
         <iframe src="https://player.vimeo.com/video/1040204504?badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;player_id=0&amp;app_id=58479" 
@@ -63,6 +84,7 @@
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                 title="HolidayCheer"></iframe>
     </div>
+
     <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
