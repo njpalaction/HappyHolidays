@@ -17,7 +17,7 @@
         /* Video container for maintaining aspect ratio and making it responsive */
         .video-container {
             position: relative;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 177.78%; /* 9:16 aspect ratio for portrait mode */
             height: 0;
             overflow: hidden;
             width: 100%;
@@ -41,29 +41,28 @@
                 padding: 0;
             }
             .video-container {
-                padding-top: 56.25%; /* Maintain the 16:9 ratio */
+                padding-top: 177.78%; /* 9:16 aspect ratio for portrait mode */
             }
         }
 
         /* Make the video responsive and centered on all screen sizes */
         @media (max-width: 480px) {
             .video-container {
-                padding-top: 56.25%; /* Maintain the aspect ratio even on smaller screens */
+                padding-top: 177.78%; /* Maintain the 9:16 aspect ratio even on smaller screens */
             }
         }
 
     </style>
 </head>
 <body>
-    <!-- Embed Vimeo video with autoplay and muted enabled -->
+    <!-- Embed Vimeo video with autoplay enabled -->
     <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/1040199570?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1" 
+        <iframe src="https://player.vimeo.com/video/1040204504?badge=0&amp;autopause=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479" 
                 frameborder="0" 
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                title="Untitled video - Made with Clipchamp"></iframe>
+                title="HolidayCheer"></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
-
